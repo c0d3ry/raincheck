@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>🍦 Vanilla Weather App</title>
+  </head>
+  <body>
+    <div class="app-container">
+      <header>
+        <form class="search-form" id="search-form">
+          <input
+            type="search"
+            placeholder="Enter a city..."
+            required
+            class="search-input"
+            id="search-input"
+          />
+          <input type="submit" value="Search" class="search-button" />
+        </form>
+      </header>
+      <main>
+        <div class="current-weather">
+          <div>
+            <h1 class="city" id="city"></h1>
+            <p class="weather-details">
+              <span id="dayntime"></span>, <span id="condition"></span>
+              <br />
+              Humidity: <strong id="humidity"></strong>, Wind:
+              <strong id="wind"></strong>
+            </p>
+          </div>
+          <div class="current-temp">
+            <div id="icons"></div>
+            <div class="current-temp-value" id="temp-value"></div>
+            <div class="current-temp-unit">°C</div>
+          </div>
+        </div>
+      </main>
+      <footer>
+        Made by <a href="#" target="_blank">c0d3ry</a> |
+        <a href="#" target="_blank">[GitHub]</a> |
+        <a href="#" target="_blank">[Netflify]</a>
+      </footer>
+    </div>
+  </body>
+</html>
