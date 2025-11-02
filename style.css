@@ -1,0 +1,102 @@
+body {
+  background-color: #cbb89c;
+  font-family: "Playfair Display", serif;
+  font-weight: 500;
+}
+
+.app-container {
+  background: white;
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 30px 50px rgba(65, 50, 100, 0.08);
+}
+
+header {
+  border-bottom: 1px solid #f9f7fe;
+  padding: 0 0 20px 0;
+}
+
+.search-input {
+  background-color: #f9f7fe;
+  font-size: 16px;
+  border: 1px solid #be6a82;
+  border-radius: 6px;
+  width: 80%;
+  padding: 15px 20px;
+  margin-bottom: 10px;
+}
+
+.search-button {
+  background-color: #be6a82;
+  color: white;
+  font-size: 16px;
+  border: none;
+  border-radius: 6px;
+  width: 18%;
+  padding: 16px 20px;
+  margin: 0 0 10px 6px;
+}
+
+main {
+  padding: 30px 0;
+}
+
+.current-weather {
+  display: flex;
+  justify-content: space-between;
+}
+
+.city {
+  color: #1a2c2b;
+  margin: 0;
+  font-size: 38px;
+  line-height: 48px;
+}
+
+.weather-details {
+  color: rgba(39, 33, 66, 0.7);
+  font-size: 17px;
+  line-height: 24px;
+}
+
+strong {
+  color: #d44e6d;
+  font-weight: 800;
+}
+
+.current-temp {
+  display: flex;
+}
+
+.current-temp-emoji {
+  width: 90px;
+  height: 90px;
+  margin: 15px 0 0 0;
+}
+
+.current-temp-value {
+  color: #1a2c2b;
+  font-size: 90px;
+  font-weight: 600;
+  line-height: 90px;
+}
+
+.current-temp-unit {
+  color: #1a2c2b;
+  font-size: 28px;
+  margin-top: 26px;
+}
+
+footer {
+  text-align: center;
+  font-size: 13px;
+  color: rgba(0, 0, 0, 0.5);
+  border-top: 1px solid #f9f7fe;
+  padding: 20px 0 0 0;
+}
+
+a {
+  color: #e2a8a6;
+}
