@@ -63,7 +63,7 @@ main {
 
 strong {
   color: #d44e6d;
-  font-weight: 800;
+  font-weight: 900;
 }
 
 .current-temp {
@@ -104,9 +104,8 @@ strong {
 
 .forecast-icon {
   text-align: center;
-  font-size: 48px;
+  width: 100%;
   margin-top: 10px;
-  margin-bottom: 10px;
 }
 
 .forecast-temperatures {
