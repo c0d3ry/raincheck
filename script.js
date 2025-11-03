@@ -60,7 +60,31 @@ function formatDate(date) {
   return `${day} ${hours}:${minutes}`;
 }
 
+function displayForecast() {
+  let days = ["Tue", "Wed", "Thu", "Fri", "Sat"];
+  let forecastHTML = "";
+
+  days.forEach(function (day) {
+    forecastHTML =
+      forecastHTML +
+      `
+              <div class="forecast-week">
+                  <div class="forecast-day">${day}</div>
+                  <div class="forecast-icon">⛅</div>
+                  <div class="forecast-temperatures">
+                    <div class="forecast-temp"><strong>16° </strong></div>
+                    <div class="forecast-temp">/ 8°</div>
+                  </div>
+                </div>
+                `;
+  });
+
+  let forecastElement = document.querySelector("#forecast");
+  forecastElement.innerHTML = forecastHTML;
+}
+
 let searchFormElement = document.querySelector("#search-form");
 searchFormElement.addEventListener("submit", searchCity);
 
 changeCity("London");
+displayForecast();
